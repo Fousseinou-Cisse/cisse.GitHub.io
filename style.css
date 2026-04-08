@@ -797,6 +797,187 @@ form {
 
     /* Navbar */
     .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-left {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row; /* menu horizontal scrollable */
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .navbar ul li {
+        flex: 0 0 auto;
+        margin-left: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .navbar ul::-webkit-scrollbar { display: none; }
+
+    /* Accueil */
+    .accueil {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 100px 5% 40px;
+    }
+
+    .accueil-info h1 { font-size: 28px; }
+    .accueil-info h2 { font-size: 20px; }
+    .accueil-info p, .accueil-info h3 { font-size: 16px; line-height: 1.4; }
+
+    .accueil-info .tel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tel-cv {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .call-icon {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .phone-number {
+        font-size: 18px;
+    }
+
+    .cv-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* Image */
+    .image {
+        margin: 20px 0;
+    }
+
+    .image .img-box {
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .image .img-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Formulaire */
+    .contact, .project-form {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    .sortie {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sortie input, textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bouton, .project-form button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Footer */
+    .footer-accueil,
+    .footer-contact,
+    .footer-about,
+    .footer-projets {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Sections textes */
+    .presentation h2,
+    .about-propos h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    .presentation p,
+    .about-propos p {
+        text-align: center;
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    /* Parcours et listes */
+    .parcours {
+        padding: 20px 5%;
+    }
+
+    .parcours ul li {
+        font-size: 18px;
+    }
+
+    /* Vidéos et projets */
+    .project-video video,
+    .langage-video video {
+        width: 100%;
+    }
+
+    .langage-video, .Langage-C h2, .langage {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Sécurité */
+    .sécurité-image {
+        gap: 20px;
+    }
+
+    .sécurité-image img {
+        width: 100%;
+        height: auto;
+    }
+
+}@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
         padding: 15px 5%;
         flex-direction: column;
         align-items: flex-start;
