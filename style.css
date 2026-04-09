@@ -1283,3 +1283,37 @@ form {
     background-color: #e55b00;
     transform: translateY(-2px);
 }
+@media screen and (max-width: 768px) {
+    /* Conteneur accueil-info vertical pour mobile */
+    .accueil-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px; /* espace entre titre, texte, CV et numéro */
+    }
+
+    /* Bouton CV */
+    .tel-cv {
+        margin: 0; /* supprime margin-top négatif */
+        font-size: 16px;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    /* Numéro de téléphone */
+    .phone-number {
+        font-size: 18px;
+        color: cyan;
+        margin-top: 5px;
+    }
+
+    /* Icônes réseaux sociaux */
+    .icons {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
